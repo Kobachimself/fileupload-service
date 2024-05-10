@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tara Johanne Gallery</title>
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .upload-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .progress-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .progress {
+            width: 0%;
+            height: 20px;
+            background-color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .status {
+            font-size: 18px;
+            padding: 10px;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px #007bff;
+        }
+
+        .gallery-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-media {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            margin: 0 10px; /* Adjust spacing between icons */
+        }
+
+        .button {
+            display: block;
+            width: 150px; /* Adjust width as needed */
+            margin: 0 auto; /* Center horizontally */
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div id="app" class="container">
+        <h1 class="title">Tara Johanne Content</h1>
+        <div class="gallery-link">
+            <a href="https://ffbfeb28531139322ff199b6a052fbd267ed7df7ce5ca5539bea020-apidata.googleusercontent.com/download/storage/v1/b/upload-seervice/o/Gallery.html?jk=ASOpP9iPoiz1W-8rsraWQT_RE6Q8lDbaGwL0a_b6K-7BBBCwNy1oa8Hyk_0DF1e0B5uxhpDAN2C8NsI1FKVemhiRMA4DQb3VIcM6_myj-21LqE9m6uRtco-pLf8vxfOAr9hagoDq7Vic0AVlygJM23CpL9qGTs4FwNEzi1MU3z1dm4Uu7ziwBsB5rP7FNESMBm8Ky_Hdf9wxTJgWkzsizmoMK_8PJmUB5OmmXppLKx34Pp08LASOlpSyO_BC7w4xJdehPJGcSxrpBCymqsTVN1oVuVJ0zBnbbj_-mDaGTIkRhLn9HdQzfflcoIAKGf6zALaiYBR3HJYXaTzvofQU7jrgHxHH1diS7MZ-vHijDvxs7yUyxhxbIBUJFg_TR__0B03_TpRCFrh1jBm5z8CTuXJGLOWT9qOZscHB81vXl57FGP-aOVm-YvLZuuFiqBvSt_wj127jYSmFl3xViyl4iIEAuckqLxkqb_StYWT_SdcsioGlaQVo93KowfLA4ekN0uTWEkrxmOBK9OsT14Gb8pjeXU8Y-qtPyKuKNHhXY9nufXceFM8gRAyRkR0LexrdLcmJEO0wyIRQFib7kFGN2r8zAHzi7xWsNyuDep7mPRLq7zFJg0Z9Ozm3hobdaKjcjV-bcoWICCfCTIUbtiR0c_ovEjQjD9tzwJCwHxC04MjWMgOTkhRB4vYYsXQZWIqH9LjWcKlPNHJud0hNzl8nZvW89_kKxAcNfNd1EQAuO9a7vTU3zIYUhiwfTmCjtyJDB21cEtQBXfPMU40ecxg8O-XU8_GCdQxbtTxa2WmDTZQm-pUN5QSYMwLU5bxKVc1d25gkh1_zxa4gHqr0zzktoVIVdEyHpg-aBzZPGMWjR9q39Ql3-Yf2GnKEbtnl_UWLDPXqueu24rS4KE0w3p7VN1fnEjCGXE0yEPIGtZ2iOHXIX8IwgMIo4BBaFguplgj0qKD_hwcs2Ci_ZZMDi5NsSW4p4vEvyddQsHhLRn-3MkFVBYV1HfVs4LBTe5yOBoP5-lrF_o2NNTfD4ZhO4-lUda6D1w7tz9vxx67e9F0XW8_vDfqcutIQj1Fd10wLLFzKRaIwltjS_UrV1Xfg58cqa3DpD4a7AOe28NIP-8myarvyfZ9NUyc_qEiwHEOH3_qNCtbLw7NHwp-YC_WTJP-YM4BbyoYD1PDonLIXYTeFYYmeuQzBocgXaIhMmVIA0tjhw0XDJjtI8YUbQ2SD4JXw8StRl1fvmkmlgiPV8BT8Nhw2BkBBppVDJ9o0nuR6LYoY4ypF&isca=1" class="button">Go to Gallery</a>
+        </div>
+
+    <!-- Include the JavaScript file -->
+    <script src="app.js"></script>
+
+    <div class="social-media">
+        <a href="https://www.snapchat.com/add/sentralt.07" target="_blank"><img src="https://media.discordapp.net/attachments/1231528474649296988/1238433674677059584/R.png?ex=663f44bd&is=663df33d&hm=8ca2830ed489a0cf63b919d5aaf6ba36748b2e7fd104c9aca377e4f679dcf0f8&=&format=webp&quality=lossless&width=905&height=905" alt="Snapchat" class="social-icon"></a>
+        <a href="https://www.tiktok.com/@justbergenfacts" target="_blank"><img src="https://media.discordapp.net/attachments/1231528474649296988/1238433674069016586/tiktok-logo-0-1.png?ex=663f44bc&is=663df33c&hm=751a1d8d147ff71a051dbac0184e5372bf65c85beb8f68ed3263157ed23938a3&=&format=webp&quality=lossless&width=905&height=905" alt="TikTok" class="social-icon"></a>
+    </div>
+</body>
+</html>
